@@ -12,14 +12,16 @@ public class ScannerTest {
         System.out.println("f = " + f);
 
         System.out.print("문자열 입력하세요:");
-        String str = scan.next();
+        String str = scan.next(); // 공백을 기준으로 입력이 됨. Hello World -> Hello
         System.out.println("str = " + str);
 
         // 버퍼비우기
-        scan.nextLine();
+        scan.nextLine(); // World가 입력스트림에 남아서 바로 출력이 됨.
 
         System.out.print("문자열 입력하세요:");
         String str1 = scan.nextLine();
-        System.out.println("str = " + str1);
+        System.out.println("str1 = " + str1);
+
+        scan.close();
     }
 }
